@@ -14,8 +14,11 @@ let totale = chilometri * euroChilometro;
 
 // 5 SCONTO DEL 20% AI PASSEGGERI MINORI DI 18 ANNI
 let scontoMinori = totale * 0.2;
+
+// 6 SCONTO DEL 40% AI PASSEGGERI MINORI DI 18 ANNI
 let scontoSenior = totale * 0.4;
 
+// 7 OUTPUT DEL PREZZO FINALE
 let totaleMinori = totale - scontoMinori;
 let totaleSenior = totale - scontoSenior;
 let totaleAdulti = totale;
