@@ -24,17 +24,20 @@ let totaleSenior = totale - scontoSenior;
 let totaleAdulti = totale;
 
 if(etaPasseggero < 18){
+  message = 'Hai meno di 18 anni quindi hai diritto a uno sconto! Il tuo prezzo da pagare è ';
   prezzoFinale = totaleMinori;
 }
 else if (etaPasseggero > 65){
+  message = 'Hai più di 65 anni quindi hai diritto a uno sconto! Il tuo prezzo da pagare è ';
   prezzoFinale = totaleSenior;
 }
 else{
+  message = 'Il tuo prezzo da pagare è ';
   prezzoFinale = totaleAdulti;
 }
 
 console.log(prezzoFinale);
 
-document.getElementById('prezzo').innerHTML = prezzoFinale.toFixed(2);
+document.getElementById('prezzo').innerHTML = message + prezzoFinale.toFixed(2);
 
 console.log(prezzoFinale.toFixed(2));
