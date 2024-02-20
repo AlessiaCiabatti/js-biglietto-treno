@@ -24,11 +24,17 @@ let totaleSenior = totale - scontoSenior;
 let totaleAdulti = totale;
 
 if(etaPasseggero < 18){
-  
+  prezzoFinale = totaleMinori;
 }
 else if (etaPasseggero > 65){
-  
+  prezzoFinale = totaleSenior;
 }
 else{
-  
+  prezzoFinale = totaleAdulti;
 }
+
+console.log(prezzoFinale);
+
+document.getElementById('prezzo').innerHTML = prezzoFinale.toFixed(2);
+
+console.log(prezzoFinale.toFixed(2));
